@@ -17,10 +17,49 @@ collections:
     label: Gallery
     folder: galleries
     create: true
+    identifier_field: name
     fields: 
+      - {label: "Title", name: "title", widget: "string"}
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
         media_library:
           config:
             multiple: true
+      - label: "Image1"
+        name: "image1"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - label: "Image2"
+        name: "image2"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - label: "Image3"
+        name: "image3"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - label: "Image4"
+        name: "image4"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - label: "Image5"
+        name: "image5"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - label: "Image6"
+        name: "image6"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      
