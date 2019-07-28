@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: jeremyosz/netlifyCMSTrial
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+  - name: gallery
+    label: Gallery
+    folder: content/gallleries
+    create: true
+    fields: 
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
