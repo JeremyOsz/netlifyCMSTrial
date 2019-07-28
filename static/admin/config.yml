@@ -15,13 +15,12 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: gallery
     label: Gallery
-    folder: content/gallleries
+    folder: galleries
     create: true
     fields: 
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
-        default: "/uploads/chocolate-dogecoin.jpg"
         media_library:
           config:
             multiple: true
